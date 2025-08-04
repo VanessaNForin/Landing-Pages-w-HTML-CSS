@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+nav span{
+    font-size: 50px;
+    font-style: oblique;
+    letter-spacing: 5px;
+    color: #6B6B6B;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 35%;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+
+a:hover{
+    letter-spacing: 3px;
+    transition: .5s;
+}
+
+main{
+    margin: 20px;
+}
+
+.obras{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.obras div{
+    width: 30%;
+}
+
+.obras figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.obras img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px;
+}
+
+.obras img:hover{
+    transform: scale(1.3);
+    transition: .5s;
+}
+
+.obras figcaption{
+    font-size: 18px;
+    font-style: oblique;
+    color: #6B6B6B;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    border-top: 1px solid #d9d9d9;
+}
+
+footer span{
+    font-size: 15px;
+    padding: 20px;
+    color: #6B6B6B;
+}

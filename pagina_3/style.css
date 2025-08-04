@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f9ebea;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "logo esp nav";
+    align-items: center;
+    padding: 10px;
+    background-color: #ac7270;
+}
+
+header span{
+    grid-area: logo;
+    text-align: center;
+    font-size: 40px;
+    color:#f9ebea;
+    font-weight: bold;
+}
+
+nav{
+    display: grid;
+    grid-area: nav;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: #f9ebea;
+    font-size: 20px;
+}
+
+nav a:hover{
+    transition: .5s;
+    color: black;
+    letter-spacing: 5px;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: galeria;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.galeria{
+    display: grid;
+    grid-area: galeria;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 5px;
+}
+
+.galeria div{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    text-align: center;
+}
+
+.galeria img{
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.galeria img:hover{
+    transition: .5s;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.galeria span{
+    margin: 5px 0px 5px 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer{
+    grid-area: footer;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100vw;
+    padding: 10px;
+    background-color: #ac7270;
+    color: #f9ebea;
+}
+
